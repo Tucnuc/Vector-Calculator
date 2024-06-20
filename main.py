@@ -8,7 +8,7 @@ def menu():
     moznosti = [
         (delkaMenu, "Délka Vektoru"),
         (skalarMenu, "Skalární Součin"),
-        (odchylkyMenu, "Odchylky Vektorů")
+        (odchylkyMenu, "Odchylka Vektorů")
     ]
 
     for index, (func, desc) in enumerate(moznosti):
