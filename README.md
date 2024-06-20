@@ -5,6 +5,6 @@ Tato kalkulačka vám umožní jednoduše spočítat základní operace s vektor
 - Skalární součin
 - Odchylku vektorů
 
-Další operace budou postupně přidávány.
+Další operace budou postupně přidány.
 ### Ukázka kalkulačky:
 ![calcScreen](screen.png)
