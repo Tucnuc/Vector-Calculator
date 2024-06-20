@@ -3,6 +3,7 @@ Tato kalkulačka vám umožní jednoduše spočítat základní operace s vektor
 ### Zatím kalkulačka umožňuje spočítat:
 - Délku vektoru
 - Skalární součin
+- Vektorový součin
 - Odchylku vektorů
 
 Další operace budou postupně přidány.

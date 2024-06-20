@@ -8,6 +8,7 @@ def menu():
     moznosti = [
         (delkaMenu, "Délka Vektoru"),
         (skalarMenu, "Skalární Součin"),
+        (vektorovySoucin, "Vektorový Součin"),
         (odchylkyMenu, "Odchylka Vektorů")
     ]
 
@@ -84,6 +85,15 @@ def vypocetSkalar(pocetSlozek):
     startAgain()
 
 
+# CELKOVY VEKTOROVY SOUCIN
+def vektorovySoucin():
+    ziskatVektory(6, True)
+    vektorSoucin()
+    print(f"Tvůj vektorový součin je: \033[1m{finalVektorSoucin}\033[0m")
+    print("")
+    startAgain()
+
+
 # -------------------
 #  VEKTOROVE OPERACE
 # -------------------
@@ -155,6 +165,28 @@ def ziskatUhel():
 
     print(f"Tvoje odchylka je: \033[1m{stupne}° {minuty}'\033[0m")
     print("")
+
+# VEKTOROVY SOUCIN
+finalVektorSoucin = []
+def vektorSoucin():
+    cycleRepetition = 1
+    for _ in range(3):
+        if cycleRepetition == 1:
+            index1 = 1
+            index2 = 2
+        elif cycleRepetition == 2:
+            index1 = 2
+            index2 = 0
+        elif cycleRepetition == 3:
+            index1 = 0
+            index2 = 1
+        
+        vektor = 0
+        vektor += ((vektor1[index1] * vektor2[index2]) - (vektor1[index2] * vektor2[index1]))
+        
+        global finalVektorSoucin
+        finalVektorSoucin.append(vektor)
+        cycleRepetition += 1
 
 
 # -----------------
